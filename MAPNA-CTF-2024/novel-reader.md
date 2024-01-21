@@ -55,8 +55,6 @@ The Novel Reader II challenge extends from the previous one, where the objective
 
 A notable constraint was the limited account balance, insufficient to read the entire file. However, through experimentation, I discovered a loophole that allowed charging negative words to our account. The implementation of the word limit was such that a negative balance, specifically -1 words, permitted access to the entire file.
 
-### Exploiting the word limit
-
 ```python
 buf = ' '.join(buf[0:session['words_balance']])+'... Charge your account to unlock more of the novel!'
 ```
